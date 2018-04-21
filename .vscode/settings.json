@@ -1,14 +1,20 @@
 {
     "eslint.autoFixOnSave": true,
-    "editor.formatOnSave": true,
     "eslint.validate": [
         {
             "language": "vue",
             "autoFix": true
         },
         {
+          "language": "javascript",
+          "autoFix": true
+        },
+        {
             "language": "html",
             "autoFix": true
         }
-    ]
+    ],
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
 }
