@@ -27,6 +27,16 @@
             <i class="fab fa-github" title="github"></i>
           </span>
         </a>
+        <a v-on:click.native="showMobileMenu = false" class="navbar-item" target="_blank" :href="appConfig.contactLinks.linkedin">
+          <span class="icon">
+            <i class="fab fa-linkedin-in" title="linkedIn"></i>
+          </span>
+        </a>
+        <a v-on:click.native="showMobileMenu = false" class="navbar-item" target="_blank" :href="appConfig.contactLinks.email">
+          <span class="icon">
+            <i class="fas fa-at" title="Email"></i>
+          </span>
+        </a>
       </div>
     </div>
 
