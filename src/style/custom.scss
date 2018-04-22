@@ -1,0 +1,55 @@
+/* 
+    This file is used to import bulma css with our colour scheme
+    We can add colour variables here which can be used in scss lang blocks
+*/
+
+// 1. Import the initial variables
+@import '../../node_modules/bulma/sass/utilities/initial-variables';
+@import '../../node_modules/bulma/sass/utilities/functions';
+
+// Update blue
+// $rpr-blue: #32377c;
+// $rpr-blue: #5b65f1;
+// $rpr-blue: #2c3e50;
+// $rpr-blue: #009;
+// 3. Set the derived variables
+// Use the new pink as the primary color
+// $primary: $rpr-blue;
+// $primary-invert: $pink-invert;
+
+// 4. Setup your Custom Colors
+// $linkedin: #0077b5;
+// $linkedin-invert: findColorInvert($linkedin);
+// $twitter: #55acee;
+// $twitter-invert: findColorInvert($twitter);
+// $github: #333;
+// $github-invert: findColorInvert($github);
+
+// 5. Add new color variables to the color map.
+// @import "../sass/utilities/derived-variables";
+// $addColors: (
+//   "twitter":($twitter, $twitter-invert),
+//   "linkedin": ($linkedin, $linkedin-invert),
+//   "github": ($github, $github-invert)
+// );
+// $colors: map-merge($colors, $addColors);
+
+// 6. Import the rest of Bulma
+@import '../../node_modules/bulma';
+
+* {
+  &.is-loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.5;
+    &:after {
+      @include loader;
+      position: absolute;
+      top: calc(50% - 2.5em);
+      left: calc(50% - 2.5em);
+      width: 5em;
+      height: 5em;
+      border-width: 0.25em;
+    }
+  }
+}
