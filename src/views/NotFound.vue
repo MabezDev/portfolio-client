@@ -1,6 +1,5 @@
 <template>
-  <section>
-    <div class="container has-text-centered">
+  <base-content class="has-text-centered">
       <h1 class="title missing-header">
         Oops, looks like this page doesn't exist
       </h1>
@@ -11,12 +10,16 @@
             </span>
         </p>
       </router-link>
-    </div>
-  </section>
+  </base-content>
 </template>
 
 <script>
-export default {}
+import BaseContent from '@/components/content/BaseContent'
+export default {
+  components: {
+    BaseContent
+  }
+}
 </script>
 
 <style>
